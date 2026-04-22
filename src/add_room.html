@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Room</title>
+</head>
+<body>
+    <h2>Add Room</h2>
+
+    <form action="create_room.php" method="POST">
+        Room Name: <input type="text" name="room_name" required><br><br>
+        Building: <input type="text" name="building" required><br><br>
+        Floor: <input type="number" name="floor" required><br><br>
+        Room Number: <input type="text" name="room_number" required><br><br>
+        Capacity: <input type="number" name="capacity" required><br><br>
+        Status: <input type="text" name="status" required><br><br>
+        Category:
+<select name="category_id">
+    <option value="1">Lecture Room</option>
+    <option value="2">Laboratory</option>
+    <option value="3">Conference Room</option>
+</select>
+
+        <button type="submit">Add Room</button>
+    </form>
+</body>
+</html>
